@@ -88,7 +88,7 @@ module.exports = aqla = async (aqla, mek) => {
         : type == "extendedTextMessage" && mek.message.extendedTextMessage.text
         ? mek.message.extendedTextMessage.text
         : "".slice(1).trim().split(/ +/).shift().toLowerCase();
-    const prefix = /^[aqrmyAQRMY]/.test(cmd) ? cmd.match(/^[aqrmyAQRMY]/gi) : "-";
+    const prefix = /^[aqryAQRY]/.test(cmd) ? cmd.match(/^[aqryAQRY]/gi) : "-";
     body =
       type === "conversation" && mek.message.conversation.startsWith(prefix)
         ? mek.message.conversation
@@ -391,7 +391,6 @@ module.exports = aqla = async (aqla, mek) => {
       case "la":
       case "ian":
       case "iyan":
-      case "as":
       case "an":
         if (!q) return sendButMessage(
           from, lang.noregis(pushname), `Maybe this button will help you`, 
