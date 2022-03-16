@@ -402,7 +402,7 @@ module.exports = aqla = async (aqla, mek) => {
           break
           case "ssist":
             if (!q) return sendButMessage(
-              from, lang.on(), `Press the button below`,
+              from, lang.on(), `© Aqla briyan`,
               [
                 { buttonId: `aempty`, buttonText: { displayText: "Ok, Thank You" }, type: 1 }
               ],
